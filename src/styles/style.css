@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply .bg-white .font-sans .antialiased;
+}ˀ
+
+.container {
+  @apply .max-w-screen-xl .mx-auto .px-4;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+img {
+  width: 100%;
+}
+
+@screen md {
+  .container {
+    @apply .px-6;
+  }
+}
+
+@screen lg {
+  .container {
+    @apply .px-8;
+  }
+}

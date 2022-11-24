@@ -2,6 +2,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import React, { useState } from "react"
 import MenuMobile from "./MenuMobile"
 import { FaBars } from "react-icons/fa"
+import ThemeToggle from "../components/themeToggle"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,7 +26,7 @@ const Header = () => {
         <Link to="/">
           <img alt="Logo" className="w-24 md:w-32" src="logo.svg" />
         </Link>
-
+        <ThemeToggle />
         <button
           className="sm:hidden"
           onClick={() => setIsMenuOpen(true)}
@@ -33,7 +34,6 @@ const Header = () => {
         >
           <FaBars className="h-6 w-auto text-gray-900 fill-current -mt-1" />
         </button>
-
         <div className="hidden sm:block">
           {site.data.menu.map((link, key) => (
             <Link

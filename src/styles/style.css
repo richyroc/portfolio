@@ -6,6 +6,10 @@ body {
   @apply .bg-white .font-sans .antialiased;
 }
 
+body.dark {
+  @apply .bg-black;
+}
+
 .container {
   @apply .max-w-screen-xl .mx-auto .px-4;
 }

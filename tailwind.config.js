@@ -14,4 +14,9 @@ module.exports = {
     opacity: ["responsive", "hover", "focus", "group-hover"],
     display: ["responsive", "hover", "focus", "last"],
   },
+  extend: {
+    colors: {
+      "regal-blue": "#0a4893",
+    },
+  },
 }

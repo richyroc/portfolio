@@ -4,11 +4,13 @@ import "typeface-inter"
 import "../styles/style.css"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
+import ThemeToggle from "../components/themeToggle"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
+      <ThemeToggle />
       {children}
       <Footer />
     </>

@@ -4,7 +4,7 @@
 
 body {
   @apply .bg-white .font-sans .antialiased;
-}ˀ
+}
 
 .container {
   @apply .max-w-screen-xl .mx-auto .px-4;

@@ -9,18 +9,18 @@ const AboutPage = ({ data }) => (
   <Layout>
     <SiteMetadata title="About" description="Sample description" />
 
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 dark:bg-dm-500">
       <div className="container py-12 lg:pb-16">
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/2 xl:w-3/5 pb-8 md:pb-0">
-            <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
               About me
             </h1>
 
-            <h2 className="text-xl leading-tight font-semibold tracking-tight text-blue-600 sm:text-2xl">
+            <h2 className="text-xl leading-tight font-semibold tracking-tight text-primary sm:text-2xl">
               Interdum et malesuada fames ac ante.
             </h2>
-            <div className="mt-4 leading-loose">
+            <div className="mt-4 dark:text-white leading-loose">
               Curabitur non hendrerit dolor. Interdum et malesuada fames ac ante
               ipsum primis in faucibus. Ut&nbsp;sapien ex, fringilla sed
               consectetur et, pharetra eget lacus.
@@ -36,7 +36,7 @@ const AboutPage = ({ data }) => (
               <br />
               <a
                 href="mailto:contact@johndoe.com"
-                className="border-b border-gray-500 hover:border-blue-600 hover:text-blue-600"
+                className="border-b border-gray-500 hover:border-primary hover:text-primary"
               >
                 contact@johndoe.com
               </a>

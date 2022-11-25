@@ -56,16 +56,16 @@ export default props => {
               )}
               {gallery && gallery.length > 1 && <Carousel images={gallery} />}
             </div>
-            <div className="w-full lg:w-3/3">
-              <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-1">
+            <div className="w-full lg:w-3/3 dark:bg-gray-500">
+              <h1 className="text-3xl leading-tight font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-1">
                 {name}
               </h1>
-              <h2 className="text-xl leading-tight font-semibold tracking-tight text-blue-600 sm:text-2xl">
+              <h2 className="text-xl leading-tight font-semibold tracking-tight text-primary dark:text-white sm:text-2xl">
                 {summary}
               </h2>
 
               {childContentfulPortfolioDescriptionRichTextNode && (
-                <div className="my-4 text-base text-gray-700 whitespace-pre-line">
+                <div className="my-4 text-base text-gray-700 dark:text-white whitespace-pre-line">
                   {documentToReactComponents(
                     childContentfulPortfolioDescriptionRichTextNode.json,
                     options
@@ -83,9 +83,9 @@ export default props => {
         </div>
       </div>
       {related && (
-        <div className="bg-gray-100 py-12 lg:py-16">
+        <div className="bg-gray-100 dark:bg-dm-500 py-12 lg:py-16">
           <div className="container">
-            <h2 className="text-3xl sm:text-4xl leading-tight font-extrabold tracking-tight text-gray-900 mb-8">
+            <h2 className="text-3xl sm:text-4xl leading-tight font-extrabold tracking-tight text-gray-900 dark:text-white mb-8">
               You may also like
             </h2>
           </div>

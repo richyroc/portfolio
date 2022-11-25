@@ -7,7 +7,7 @@ body {
 }
 
 body.dark {
-  @apply bg-black;
+  @apply bg-dm-300;
 }
 
 .container {
